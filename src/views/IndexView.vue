@@ -5,7 +5,6 @@
 
 <template>
     <div class="p-5">
-        
         <LogData/>
     </div>
     
@@ -14,16 +13,12 @@
 
 <script>
 
-    import LogData from "../components/log-data.vue"
-
-
+    import LogData from "../components/logs-data.vue"
 
     export default {
-
         components: {
             LogData
         },
-
     }
 
 </script>

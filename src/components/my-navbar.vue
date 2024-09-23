@@ -1,9 +1,5 @@
 
 
-
-
-
-
 <template>
     <nav class="hat navbar navbar-expand-lg">
       <div class="container-fluid">
@@ -16,12 +12,6 @@
             <li class="nav-item">
                 <router-link class="hat_link nav-link active" aria-current="page" to="/">Все логи</router-link> 
             </li>
-            <li class="nav-item">
-              <a class="hat_link nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="hat_link nav-link" href="#">Pricing</a>
-            </li>
           </ul>
         </div>
       </div>
@@ -30,18 +20,15 @@
 
 
 <style>
+  .hat {
+      background: #aeffc3;
+      padding: 0 0 0 15%;
+      top: 0;
+      position: sticky;
+  }
 
-
-.hat {
-    background: #91c1b1;
-    padding: 0 0 0 15%;
-    top: 0;
-    position: sticky;
-}
-
-.hat_link {
-    color: #dee2e6;
-    font-size: 24px;
-}
-
+  .hat_link {
+      color: #dee2e6;
+      font-size: 24px;
+  }
 </style>
