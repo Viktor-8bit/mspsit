@@ -4,11 +4,26 @@
 
 
 <template>
-    
-    <div>
-
-        <h2>Главная сайта</h2>
-        <router-link to="/login">залогиниться</router-link> 
+    <div class="p-5">
+        
+        <LogData/>
     </div>
     
 </template>
+
+
+<script>
+
+    import LogData from "../components/log-data.vue"
+
+
+
+    export default {
+
+        components: {
+            LogData
+        },
+
+    }
+
+</script>
