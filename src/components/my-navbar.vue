@@ -21,7 +21,7 @@
 
 <style>
   .hat {
-      background: #aeffc3;
+      background: #95f1ac;
       padding: 0 0 0 15%;
       top: 0;
       position: sticky;

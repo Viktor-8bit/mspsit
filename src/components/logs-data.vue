@@ -30,14 +30,14 @@
         <div class="query-container">
             <div class="row">
                 <div class="col-2 col-ms-3 mb-2">{{ log['user_agent'] }}</div>
-                <div class="col query mb-2 mt-2">
-                    <highlightjs
+                <div class="col-5 mb-2 mt-2">
+                    <highlightjs class="query"
                         language="SQL"
                         :code="`${log['query']}`"
                     />
                 </div>
             </div>
-            <button type="button" class="btn btn-outline-success" v-on:click="console.log(log['id'])">Подробнее</button>
+            <button type="button" class="btn btn-outline-success" @click="$router.push(`/log/${log['id']}`)">Подробнее</button>
         </div>
     </div>
 </template>
@@ -54,9 +54,9 @@
     }
 
     .query {
-        max-height: 100px; /* Установите желаемую высоту блока */
-        text-overflow: ellipsis;
         overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
     }
 
     .query-container {
